@@ -1,4 +1,4 @@
-# molearn4rna
+# molearnA
 
 *molearn application to sampling RNA conformational space*
 
@@ -20,19 +20,19 @@ Obtained from the other repository are the following:
                                                   with cryptic ligand binding site, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Training input data, consisting of 400 snapshot structures is  'HIV1TAR_in_Two_States.pdb'  
     and input PDB file for conformation generation with molearn models is  'Max_RMSd_Pair.pdb' . 
-    They should be downloaded from https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna in advance, 
+    They should be downloaded from https://waseda.app.box.com/folder/300778804035?v=data-molearnA in advance, 
     and should be copied in  'data'  folder  in your machine before running an example script.
   * Molearn generated conformations (e.g., MolGen_HIVTAR_from_Model-A.pdb) are found in the  'results/pdb'  folder. 
-    They can be downloaded from https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna.
+    They can be downloaded from https://waseda.app.box.com/folder/300778804035?v=data-molearnA.
 *  Results discussed in [Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
                          with cryptic ligand binding site, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Trained molearn models in the  'results/model/'  folder, which should be downloaded from 
-    https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna in advance. 
+    https://waseda.app.box.com/folder/300778804035?v=data-molearnA in advance. 
     Grid points for MV2003-binding conformations are given in the file  'results/moddel/Grid_Points_for_Conformations.txt' .
 
 ## Repository structure
 
-molearn4rna-main/ <br>
+molearnA-main/ <br>
 ├── data/               * Input datasets for training and conformation generation <br>
 ├── examples/           * sample scripts for training and conformation generation <br>
 ├── results/            * Output results (QRNA opt. structures) <br>
@@ -44,7 +44,7 @@ molearn4rna-main/ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── environment/       * yml file from installation test <br>
 
  'data' ,  'results/model'  and  'results/pdb'  are empty folders. Files should be obtained from
-  https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna.
+  https://waseda.app.box.com/folder/300778804035?v=data-molearnA.
 
 ## Requirements ##
 
@@ -61,34 +61,34 @@ For other packages, dependencies are described in the ' src/environment/molearnA
 <br>
 1) Install molearn into a local environment <br>
 * Download “molearn-diffusion.zip” from https://github.com/Degiacomi-Lab/molearn/tree/diffusion in advance. <br>
-* Download “molearn4rna-main.zip” from https://github.com/hmdlab/molearn4rna in advance. <br>
-* Copy “molearn-diffusion.zip” and “molearn4rna-main.zip” in your working directory <br>
+* Download “molearnA-main.zip” from https://github.com/hmdlab/molearnA in advance. <br>
+* Copy “molearn-diffusion.zip” and “molearnA-main.zip” in your working directory <br>
 &nbsp;&nbsp;&nbsp;% cd PATH/to/the working directory <br>
 &nbsp;&nbsp;&nbsp;% unzip molearn-diffusion.zip <br>
 &nbsp;&nbsp;&nbsp;% cd molearn-diffusion <br>
-&nbsp;&nbsp;&nbsp;% conda create --name  molearn4rna   python=3.10 <br>
-&nbsp;&nbsp;&nbsp;( or % conda env create -f PATH/TO/molearn4rna-main/src/environment/molearn4rna.yml)<br>
-&nbsp;&nbsp;&nbsp;% conda activate molearn4rna <br>
-&nbsp;&nbsp;&nbsp;% conda install  numpy cython  scipy  pandas scikit-learn #<--required for installing biobox; If molearn4rna is created via the yml file, this step could be skipped <br>
+&nbsp;&nbsp;&nbsp;% conda create --name  molearnA   python=3.10 <br>
+&nbsp;&nbsp;&nbsp;( or % conda env create -f PATH/TO/molearnA-main/src/environment/molearnA.yml)<br>
+&nbsp;&nbsp;&nbsp;% conda activate molearnA <br>
+&nbsp;&nbsp;&nbsp;% conda install  numpy cython  scipy  pandas scikit-learn #<--required for installing biobox; If molearnA is created via the yml file, this step could be skipped <br>
 &nbsp;&nbsp;&nbsp;% pip install openmm #<-- install openmm <br>
 &nbsp;&nbsp;&nbsp;% git clone https://github.com/Degiacomi-Lab/biobox.git<--download biobox <br>
 &nbsp;&nbsp;&nbsp;% cd biobox  <br>
 &nbsp;&nbsp;&nbsp;% pip install . #<--install biobox <br>
 &nbsp;&nbsp;&nbsp;% cd ../ <br>
 &nbsp;&nbsp;&nbsp;% pip install . #<--install molearn <br>
-&nbsp;&nbsp;&nbsp;% conda install pytorch torchvision torchaudio cpuonly -c pytorch #<--install torch; If molearn4rna is created via the yml file, this step could be skipped <br>
+&nbsp;&nbsp;&nbsp;% conda install pytorch torchvision torchaudio cpuonly -c pytorch #<--install torch; If molearnA is created via the yml file, this step could be skipped <br>
  <br>
 2) Modify molearn to apply it to RNA <br>
-* Download “molearn4rna-main.zip” from https://github.com/hmdlab/molearn4rna in advance. <br>
-* Copy items in the molearn4rna-main into the molearn installed directory <br>
-&nbsp;&nbsp;&nbsp;%cp PATH/To/molearn4rna-main/src/molearn/*.py PATH/To/conda_local/conda/envs/molearn4rna/lib/python3.10/site-packages/molearn <br>
-&nbsp;&nbsp;&nbsp;%cp PATH/To/molearn4rna-main/src/parameters/* PATH/To/conda_local/conda/envs/molearn4rna/lib/python3.10/site-packages/molearn/parameters <br>
-&nbsp;&nbsp;&nbsp;%cd PATH/To/conda_local/conda/envs/molearn4rna/lib/python3.10/site-packages/molearn <br>
+* Download “molearnA-main.zip” from https://github.com/hmdlab/molearnA in advance. <br>
+* Copy items in the molearnA-main into the molearn installed directory <br>
+&nbsp;&nbsp;&nbsp;%cp PATH/To/molearnA-main/src/molearn/*.py PATH/To/conda_local/conda/envs/molearnA/lib/python3.10/site-packages/molearn <br>
+&nbsp;&nbsp;&nbsp;%cp PATH/To/molearnA-main/src/parameters/* PATH/To/conda_local/conda/envs/molearnA/lib/python3.10/site-packages/molearn/parameters <br>
+&nbsp;&nbsp;&nbsp;%cd PATH/To/conda_local/conda/envs/molearnA/lib/python3.10/site-packages/molearn <br>
  <br>
 3) Run Examples <br>
-* Download PDB files for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna and copy PATH/To/molearn4rna-main/data <br>
-* Download trained molearn models for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna and copy PATH/To/molearn4rna-main/rusults/model <br>
-&nbsp;&nbsp;&nbsp;% cd PATH/To/molearn4rna-main/examples <br>
+* Download PDB files for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearnA and copy PATH/To/molearnA-main/data <br>
+* Download trained molearn models for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearnA and copy PATH/To/molearnA-main/rusults/model <br>
+&nbsp;&nbsp;&nbsp;% cd PATH/To/molearnA-main/examples <br>
 &nbsp;&nbsp;&nbsp;% chmod +x *sh <br>
 &nbsp;&nbsp;&nbsp;% ./run_Traning_Molearn.sh  <br>
 * Computation may take several hour with standard CPU machine. <br> 
@@ -117,6 +117,3 @@ Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformat
 ## Contact ##
 
 If you have any issues or questions please contact mhamada@waseda.jp; ikuo.kurisaki@aoni.waseda.jp.
-
-
-
