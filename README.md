@@ -27,7 +27,7 @@ Obtained from the other repository are the following:
 *  Results discussed in [Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
                          with cryptic ligand binding site, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Trained molearn models in the  'results/model/'  folder, which should be downloaded from 
-    https://waseda.app.box.com/folder/300778804035?v=data-molearnA in advance. 
+    Zenodo repository (DOI: 10.5281/zenodo.18847873) in advance. 
     Grid points for MV2003-binding conformations are given in the file  'results/moddel/Grid_Points_for_Conformations.txt' .
 
 ## Repository structure
