@@ -38,6 +38,7 @@ molearnA-main/ <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── parameters/        * Source files for amber force field  <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── environment/       * yml file from installation test <br>
 
+
  'data' ,  'results/model'  and  'results/pdb'  are empty folders. Files should be obtained from
   https://waseda.app.box.com/folder/300778804035?v=data-molearnA.
 
