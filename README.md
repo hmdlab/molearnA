@@ -15,7 +15,7 @@ Included in this repository are the following:
 *  detailing:
   * Examples of how to execute training and conformation generation with molearn, which are found in the  'examples'  folder.
 
-Obtained from Zenodo repository (DOI: 10.5281/zenodo.18847873) are the following:
+Obtained from Zenodo repository (https://doi.org/10.5281/zenodo.18847873) are the following:
 * PDB files in the ' data'  folder, discussed in [Ikuo Kurisaki, Michiaki Hamada (2026). Hybrid molecular dynamics–deep generative framework expands apo RNA ensembles toward cryptic ligand-binding conformations: application to HIV-1 TAR, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Training input data and input PDB files for interpolating conformation generation with molearn models ('Max_RMSd_Pair.pdb'). 
     They should be copied in 'data'  folder  in your machine before running an example script.
