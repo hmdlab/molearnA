@@ -1,2 +1,2 @@
 This is an empty folder. Files should be obtained from
-https://waseda.app.box.com/folder/300778804035?v=data-molearn4rna.
+the Zenodo repository (DOI: 10.5281/zenodo.18847873).
