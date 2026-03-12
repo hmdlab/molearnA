@@ -20,8 +20,7 @@ Obtained from Zenodo repository (DOI: 10.5281/zenodo.18847873) are the following
   * Training input data and input PDB files for interpolating conformation generation with molearn models ('Max_RMSd_Pair.pdb'). 
     They should be copied in 'data'  folder  in your machine before running an example script.
   * Molearn generated conformations (e.g., MolGen_HIVTAR_from_Model-A.pdb) are found in the  'results/pdb'  folder. 
-  * Results discussed in [Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
-                           with cryptic ligand binding site, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
+  * Results discussed in [Ikuo Kurisaki, Michiaki Hamada (2026). Hybrid molecular dynamics–deep generative framework expands apo RNA ensembles toward cryptic ligand-binding conformations: application to HIV-1 TAR, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Trained molearn models in the  'results/model/'  folder. 
     Grid points for MV2003-binding conformations are given in the file 'results/moddel/Grid_Points_for_Conformations.txt'.
 
@@ -40,7 +39,7 @@ molearnA-main/ <br>
 
 
  'data' ,  'results/model'  and  'results/pdb'  are empty folders. Files should be obtained from
-  https://waseda.app.box.com/folder/300778804035?v=data-molearnA.
+  the Zenodo repository (https://doi.org/10.5281/zenodo.18847873).
 
 ## Requirements ##
 
@@ -82,8 +81,8 @@ For other packages, dependencies are described in the ' src/environment/molearnA
 &nbsp;&nbsp;&nbsp;%cd PATH/To/conda_local/conda/envs/molearnA/lib/python3.10/site-packages/molearn <br>
  <br>
 3) Run Examples <br>
-* Download PDB files for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearnA and copy PATH/To/molearnA-main/data <br>
-* Download trained molearn models for the example from https://waseda.app.box.com/folder/300778804035?v=data-molearnA and copy PATH/To/molearnA-main/rusults/model <br>
+* Download PDB files for the example from https://doi.org/10.5281/zenodo.18847873 and copy PATH/To/molearnA-main/data <br>
+* Download trained molearn models for the example from https://doi.org/10.5281/zenodo.18847873 and copy PATH/To/molearnA-main/rusults/model <br>
 &nbsp;&nbsp;&nbsp;% cd PATH/To/molearnA-main/examples <br>
 &nbsp;&nbsp;&nbsp;% chmod +x *sh <br>
 &nbsp;&nbsp;&nbsp;% ./run_Traning_Molearn.sh  <br>
@@ -96,8 +95,7 @@ For other packages, dependencies are described in the ' src/environment/molearnA
 * by results/model/molearn_network_1000_from_Try-A.pth (Labeled by A) and x is 0.49 ((50 -1)/100). y ranges from 0 to 1 by 0.01 interval. <br>
 * It is noted that, before further analyses, each of generated conformations should be refined  <br>
 * by using molecular mechanics simulations such as QRNAS to relax unexpected steric distortions <br>
-* (see for details Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
-   with cryptic ligand binding site, bioRxiv(https://doi.org/10.1101/2025.01.07.631832)). <br>
+* (see for details Hybrid molecular dynamics–deep generative framework expands apo RNA ensembles toward cryptic ligand-binding conformations: application to HIV-1 TAR, bioRxiv (https://www.biorxiv.org/content/10.1101/2025.01.07.631832v8)). <br>
 
 
 ## Reference ##
