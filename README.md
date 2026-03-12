@@ -16,8 +16,7 @@ Included in this repository are the following:
   * Examples of how to execute training and conformation generation with molearn, which are found in the  'examples'  folder.
 
 Obtained from Zenodo repository (DOI: 10.5281/zenodo.18847873) are the following:
-* PDB files in the ' data'  folder, discussed in [Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
-                                                  with cryptic ligand binding site, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
+* PDB files in the ' data'  folder, discussed in [Ikuo Kurisaki, Michiaki Hamada (2026). Hybrid molecular dynamics–deep generative framework expands apo RNA ensembles toward cryptic ligand-binding conformations: application to HIV-1 TAR, bioRxiv](https://doi.org/10.1101/2025.01.07.631832)
   * Training input data and input PDB files for interpolating conformation generation with molearn models ('Max_RMSd_Pair.pdb'). 
     They should be copied in 'data'  folder  in your machine before running an example script.
   * Molearn generated conformations (e.g., MolGen_HIVTAR_from_Model-A.pdb) are found in the  'results/pdb'  folder. 
@@ -107,8 +106,7 @@ V.K. Ramaswamy, S.C. Musson, C.G. Willcocks, M.T. Degiacomi (2021).
  Learning protein conformational space with convolutions and latent interpolations, Physical Review X 11 (https://journals.aps.org/prx/abstract/10.1103/PhysRevX.11.011052)
 
 please cite:
-Ikuo Kurisaki, Michiaki Hamada (2025). Deep learning generates apo RNA conformations 
- with cryptic ligand binding site, bioRxiv (https://doi.org/10.1101/2025.01.07.631832)
+Ikuo Kurisaki, Michiaki Hamada (2026). Hybrid molecular dynamics–deep generative framework expands apo RNA ensembles toward cryptic ligand-binding conformations: application to HIV-1 TAR, bioRxiv (https://www.biorxiv.org/content/10.1101/2025.01.07.631832v8)
 
 ## Contact ##
 
