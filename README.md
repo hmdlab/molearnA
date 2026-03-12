@@ -47,7 +47,7 @@ We tested Molearn with the modified codes on Python 3.10 on Rocky Linux 8.6
 and the following packages (and their associated packages):
 * numpy
 * PyTorch
-* Biobox(https://github.com/Degiacomi-Lab/biobox)
+* Biobox (https://github.com/Degiacomi-Lab/biobox)
 * openMM (https://github.com/openmm/openmm)
 For other packages, dependencies are described in the ' src/environment/molearnA.yml' .
 
